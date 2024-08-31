@@ -14,11 +14,11 @@ const port = 8080;
 const jwt = require('jsonwebtoken')
 
 const connection = mysql.createConnection({ //Creation of a connection to the database
-    host: process.env.HOST,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE,
-    port: process.env.PORT 
+    host: process.env.HOST || 'localhost',
+    user: process.env.USER || 'root',
+    password: process.env.PASSWORD || 'v@eR1234',
+    database: process.env.DATABASE || 'prefectPortal',
+    port: process.env.PORT || 3306
 });
 
 
