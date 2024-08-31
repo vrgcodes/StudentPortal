@@ -1,6 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
-const mysql = require("mysql2");
+const mysql = require("mysql");
 const bodyParser = require("body-parser");
 const bcrypt = require('bcrypt');
 const dotenv = require('dotenv')
